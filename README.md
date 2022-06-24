@@ -27,10 +27,6 @@ The following variables are set in `defaults/main`:
 | Variable                 | Description                  |
 |--------------------------|------------------------------|
 |guacamole_version         | Guacamole version to install |
-|guacamole_db_user         | Guacamole MariaDB username   |
-|guacamole_db_password     | Guacamole MariaDB password   |
-|guacamole_db_name         | Guacamole MariaDB database   |
-|mysql_java_client_version | MySQL Java Client version    |
 |guacamole_apt_install     | Apt packages to install      |
 
 Example Playbook
