@@ -1,0 +1,25 @@
+---
+guacamole_version: 1.4.0
+guacamole_server_source: "http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/{{ guacamole_version }}/source/guacamole-server-{{ guacamole_version }}.tar.gz"
+
+
+guacamole_apt_install:
+  - libcairo2-dev
+  - libjpeg62-turbo-dev
+  - libpng-dev
+  - libossp-uuid-dev
+  - libavcodec-dev
+  - libavutil-dev
+  - libswscale-dev
+  - freerdp2-dev
+  - libpango1.0-dev
+  - libssh2-1-dev
+  - libtelnet-dev
+  - libvncserver-dev
+  - libpulse-dev
+  - libssl-dev
+  - libvorbis-dev
+  - libwebp-dev
+  - gcc
+  - git
+  - make

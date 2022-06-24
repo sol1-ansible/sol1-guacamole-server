@@ -1,0 +1,13 @@
+---
+- name: Enabling guacd service
+  systemd:
+    name: guacd
+    enabled: yes
+    state: started
+  become: true
+- name: Enabling Guacamole service
+  systemd:
+    name: guacd
+    state: started
+    enabled: yes
+  become: true
