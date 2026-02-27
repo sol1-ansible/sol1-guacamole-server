@@ -1,7 +1,7 @@
 ---
 guacamole_version: 1.4.0
-guacamole_server_source: "http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/{{ guacamole_version }}/source/guacamole-server-{{ guacamole_version }}.tar.gz"
 
+guacamole_server_source: "http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/{{ guacamole_version }}/source/guacamole-server-{{ guacamole_version }}.tar.gz"
 
 guacamole_apt_install:
   - libcairo2-dev

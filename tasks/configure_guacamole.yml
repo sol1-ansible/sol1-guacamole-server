@@ -5,6 +5,7 @@
     enabled: yes
     state: started
   become: true
+  
 - name: Enabling Guacamole service
   systemd:
     name: guacd

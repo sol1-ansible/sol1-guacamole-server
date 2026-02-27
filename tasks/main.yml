@@ -4,5 +4,7 @@
   package:
     name: "{{ guacamole_apt_install }}"
     state: present
+
 - import_tasks: install_guacamole_server.yml
+
 - import_tasks: configure_guacamole.yml

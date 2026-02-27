@@ -3,28 +3,33 @@
   get_url:
     url: "{{ guacamole_server_source }}"
     dest: /tmp/
+
 - name: Unarchiving guacamole-server-{{ guacamole_version }}.tar.gz
   unarchive:
     src: /tmp/guacamole-server-{{ guacamole_version }}.tar.gz
     dest: /tmp/
     copy: no
+
 - name: Running guacamole configure script
   shell: ./configure --with-init-dir=/etc/init.d
   args:
     chdir: /tmp/guacamole-server-{{ guacamole_version }}
   become: true
   changed_when: false
+
 - name: Making guacamole-server (This will take some time)
   make:
     chdir: /tmp/guacamole-server-{{ guacamole_version }}/
   become: true
   changed_when: false
+
 - name: Make install guacamole-server
   make:
     chdir: /tmp/guacamole-server-{{ guacamole_version }}/
     target: install
   become: true
   changed_when: false
+  
 - name: Running ldconfig
   shell: ldconfig
   become: true
