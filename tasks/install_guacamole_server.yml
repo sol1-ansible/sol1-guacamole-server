@@ -11,7 +11,7 @@
     copy: no
 
 - name: Running guacamole configure script
-  shell: ./configure --with-init-dir=/etc/init.d
+  shell: ./configure --with-init-dir=/etc/init.d CFLAGS="-Wno-deprecated-declarations"
   args:
     chdir: /tmp/guacamole-server-{{ guacamole_version }}
   become: true
