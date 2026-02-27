@@ -11,7 +11,7 @@ guacamole_apt_install:
   - libavcodec-dev
   - libavutil-dev
   - libswscale-dev
-  - freerdp2-dev
+  - freerdp3-dev
   - libpango1.0-dev
   - libssh2-1-dev
   - libtelnet-dev
